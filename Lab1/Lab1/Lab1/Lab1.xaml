@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab1.Lab1">
+    <StackLayout>
+        <Label x:Name="facultyLabel" Text="Факультет" FontSize="Large"/>
+        <Picker x:Name="faculties" SelectedIndexChanged="Faculties_SelectedIndexChanged">
+            <Picker.Items>
+                <x:String>ФІОТ</x:String>
+                <x:String>ІПСА</x:String>
+                <x:String>ФПМ</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label x:Name="courseLabel" Text="Курс" FontSize="Large"/>
+        <Picker x:Name="courses" SelectedIndexChanged="Courses_SelectedIndexChanged">
+            <Picker.Items>
+                <x:String>1</x:String>
+                <x:String>2</x:String>
+                <x:String>3</x:String>
+                <x:String>4</x:String>
+                <x:String>5</x:String>
+                <x:String>6</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button x:Name="search" Text="Ok" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Search_Clicked"/>
+        <Button x:Name="cance" Text="Cancel" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Cance_Clicked"/>
+    </StackLayout>
+</ContentPage>
